@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { createPageUrl } from '../utils';
+import { createPageUrl } from '../utils.js';
 import { motion } from 'framer-motion';
 import { ArrowRight, Zap, Target, TrendingUp, Play, Star, CheckCircle } from 'lucide-react';
 
