@@ -58,7 +58,7 @@ export default function Layout({ children, currentPageName }) {
                                 </div>
                             </div>
                             <span className="text-2xl font-bold bg-gradient-to-r from-indigo-900 to-violet-700 bg-clip-text text-transparent">
-                                Brand
+                                AutoCare Pro
                             </span>
                         </Link>
 
@@ -152,11 +152,11 @@ export default function Layout({ children, currentPageName }) {
                                         <div className="w-6 h-6 bg-white rounded-md" />
                                     </div>
                                 </div>
-                                <span className="text-2xl font-bold">Brand</span>
+                                <span className="text-2xl font-bold">AutoCare Pro</span>
                             </div>
                             <p className="text-indigo-200 leading-relaxed max-w-md">
-                                Elevate your brand with innovative solutions and creative excellence. 
-                                We turn visions into reality.
+                                Premium car care services including professional washing and window film installation. 
+                                Your vehicle deserves the best.
                             </p>
                         </div>
 
@@ -179,14 +179,14 @@ export default function Layout({ children, currentPageName }) {
                         <div>
                             <h3 className="font-semibold text-lg mb-4">Connect</h3>
                             <ul className="space-y-3 text-indigo-200">
-                                <li>info@brand.com</li>
-                                <li>+1 (555) 123-4567</li>
+                                <li>info@autocarepro.com</li>
+                                <li>+1 (555) 789-AUTO</li>
                             </ul>
                         </div>
                     </div>
 
                     <div className="border-t border-indigo-800 mt-12 pt-8 text-center text-indigo-300">
-                        <p>&copy; {new Date().getFullYear()} Brand. All rights reserved.</p>
+                        <p>&copy; {new Date().getFullYear()} AutoCare Pro. All rights reserved.</p>
                     </div>
                 </div>
             </footer>
