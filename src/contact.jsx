@@ -37,19 +37,19 @@ export default function Contact() {
         {
             icon: Mail,
             title: 'Email Us',
-            content: 'info@brand.com',
-            link: 'mailto:info@brand.com'
+            content: 'info@autocarepro.com',
+            link: 'mailto:info@autocarepro.com'
         },
         {
             icon: Phone,
             title: 'Call Us',
-            content: '+1 (555) 123-4567',
-            link: 'tel:+15551234567'
+            content: '+1 (555) 789-AUTO',
+            link: 'tel:+15557892886'
         },
         {
             icon: MapPin,
-            title: 'Visit Us',
-            content: '123 Business Ave, Suite 100, San Francisco, CA 94103',
+            title: 'Visit Our Shop',
+            content: '456 Auto Center Drive, San Francisco, CA 94110',
             link: '#'
         }
     ];
@@ -70,10 +70,10 @@ export default function Contact() {
                         transition={{ duration: 0.8 }}
                     >
                         <h1 className="text-6xl md:text-7xl font-bold mb-6">
-                            Get In Touch
+                            Book Your Service
                         </h1>
                         <p className="text-xl md:text-2xl text-indigo-200 max-w-3xl mx-auto leading-relaxed">
-                            Let's discuss how we can help elevate your business to new heights
+                            Schedule your car wash or window film installation appointment today
                         </p>
                     </motion.div>
                 </div>
@@ -91,10 +91,10 @@ export default function Contact() {
                         >
                             <div className="bg-white rounded-3xl p-8 md:p-12 shadow-2xl shadow-slate-200/50 border border-slate-100">
                                 <h2 className="text-3xl font-bold mb-3 text-slate-900">
-                                    Send Us a Message
+                                    Book an Appointment
                                 </h2>
                                 <p className="text-slate-600 mb-8">
-                                    Fill out the form below and we'll get back to you within 24 hours
+                                    Fill out the form below and we'll confirm your booking within 2 hours
                                 </p>
 
                                 {submitted ? (
@@ -107,10 +107,10 @@ export default function Contact() {
                                             <CheckCircle className="text-white" size={40} />
                                         </div>
                                         <h3 className="text-2xl font-bold text-slate-900 mb-2">
-                                            Thank You!
+                                            Booking Received!
                                         </h3>
                                         <p className="text-slate-600">
-                                            We've received your message and will be in touch soon.
+                                            We'll confirm your appointment within 2 hours.
                                         </p>
                                     </motion.div>
                                 ) : (
@@ -162,20 +162,20 @@ export default function Contact() {
 
                                         <div>
                                             <label className="block text-sm font-semibold text-slate-700 mb-2">
-                                                Company Name
+                                                Vehicle Make & Model
                                             </label>
                                             <Input
                                                 name="company"
                                                 value={formData.company}
                                                 onChange={handleChange}
                                                 className="h-12 rounded-xl border-slate-200 focus:border-violet-500 focus:ring-violet-500"
-                                                placeholder="Your Company Inc."
+                                                placeholder="e.g., Toyota Camry 2022"
                                             />
                                         </div>
 
                                         <div>
                                             <label className="block text-sm font-semibold text-slate-700 mb-2">
-                                                Your Message *
+                                                Service Required & Preferred Date *
                                             </label>
                                             <Textarea
                                                 name="message"
@@ -184,7 +184,7 @@ export default function Contact() {
                                                 required
                                                 rows={6}
                                                 className="rounded-xl border-slate-200 focus:border-violet-500 focus:ring-violet-500 resize-none"
-                                                placeholder="Tell us about your project..."
+                                                placeholder="e.g., Full car wash and window film installation, preferred date: Next Saturday"
                                             />
                                         </div>
 
@@ -193,7 +193,7 @@ export default function Contact() {
                                             className="w-full h-14 bg-gradient-to-r from-indigo-900 to-violet-700 hover:from-indigo-800 hover:to-violet-600 text-white rounded-xl font-semibold text-lg shadow-lg shadow-violet-500/30 hover:shadow-xl hover:shadow-violet-500/40 transition-all duration-300"
                                         >
                                             <Send className="mr-2" size={20} />
-                                            Send Message
+                                            Book Appointment
                                         </Button>
                                     </form>
                                 )}
@@ -212,8 +212,8 @@ export default function Contact() {
                                     Contact Information
                                 </h2>
                                 <p className="text-lg text-slate-600 leading-relaxed">
-                                    We're here to help and answer any questions you might have. 
-                                    We look forward to hearing from you.
+                                    Get in touch to schedule your car wash or window film installation. 
+                                    We're here to answer any questions about our services.
                                 </p>
                             </div>
 
@@ -246,20 +246,20 @@ export default function Contact() {
                             {/* Office Hours */}
                             <div className="bg-white rounded-2xl p-8 shadow-lg shadow-slate-200/50 border border-slate-100">
                                 <h3 className="font-bold text-xl text-slate-900 mb-4">
-                                    Office Hours
+                                    Service Hours
                                 </h3>
                                 <div className="space-y-3 text-slate-600">
                                     <div className="flex justify-between">
                                         <span>Monday - Friday</span>
+                                        <span className="font-semibold">8:00 AM - 7:00 PM</span>
+                                    </div>
+                                    <div className="flex justify-between">
+                                        <span>Saturday - Sunday</span>
                                         <span className="font-semibold">9:00 AM - 6:00 PM</span>
                                     </div>
-                                    <div className="flex justify-between">
-                                        <span>Saturday</span>
-                                        <span className="font-semibold">10:00 AM - 4:00 PM</span>
-                                    </div>
-                                    <div className="flex justify-between">
-                                        <span>Sunday</span>
-                                        <span className="font-semibold">Closed</span>
+                                    <div className="flex justify-between pt-2 border-t">
+                                        <span className="font-medium">Drop-off Available</span>
+                                        <span className="font-semibold text-violet-700">24/7</span>
                                     </div>
                                 </div>
                             </div>
@@ -285,17 +285,17 @@ export default function Contact() {
                         viewport={{ once: true }}
                     >
                         <h2 className="text-4xl md:text-5xl font-bold mb-6">
-                            Prefer to Talk Directly?
+                            Need Immediate Service?
                         </h2>
                         <p className="text-xl text-indigo-200 mb-8">
-                            Schedule a call with our team to discuss your needs in detail
+                            Call us now to book your appointment or ask about our services
                         </p>
                         <a
-                            href="tel:+15551234567"
+                            href="tel:+15557892886"
                             className="inline-flex items-center gap-2 px-8 py-4 bg-white text-indigo-900 rounded-xl font-semibold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
                         >
                             <Phone size={20} />
-                            Call Now
+                            Call (555) 789-AUTO
                         </a>
                     </motion.div>
                 </div>
