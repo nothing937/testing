@@ -1,3 +1,3 @@
 name = "kinov"
-main = "dist"         # top-level folder with built assets
+main = "workers-site/index.js"         # top-level folder with built assets
 compatibility_date = "2025-11-24"
